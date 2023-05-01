@@ -1,0 +1,36 @@
+.preference {
+  padding-top: 94px;
+}
+
+.preference-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.preference-list__item {
+  width: 270px;
+}
+
+.preference-list__item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.preference-list__item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 30px;
+}
+
+.preference-list__icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background-color: $secondary-bgc;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.preference-list__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

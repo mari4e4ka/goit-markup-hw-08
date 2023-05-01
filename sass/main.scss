@@ -1,0 +1,22 @@
+@import "./base/normalize";
+@import "./base/fonts";
+
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
+@import "./components/body";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/buttons";
+@import "./components/backdrop";
+@import "./components/main-form";
+@import "./components/preferences";
+@import "./components/activity";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+
+@import "./components/portfolio";
+
+@import "./components/contact-page";
