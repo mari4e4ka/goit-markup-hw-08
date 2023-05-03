@@ -10,9 +10,23 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    width: 780px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 
 h1,
