@@ -490,7 +490,7 @@ a {
   text-decoration: none;
 }
 
-.section, .section--inverse {
+.section, .activity-section, .section--inverse {
   position: relative;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -851,33 +851,84 @@ a {
 }
 
 .preference {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .preference {
+    padding-top: 94px;
+  }
 }
 
 .preference-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .preference-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preference-list {
+    margin-bottom: 0;
+  }
 }
 
 .preference-list__item {
-  width: 270px;
-}
-
-.preference-list__item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
-
-.preference-list__item:not(:nth-last-child(-n+4)) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .preference-list__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .preference-list__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preference-list__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .preference-list__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preference-list__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .preference-list__item:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
+  }
 }
 
 .preference-list__icon {
-  width: 270px;
+  width: 450px;
   height: 120px;
   padding: 25px 100px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .preference-list__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preference-list__icon {
+    width: 270px;
+  }
 }
 
 .preference-list__title {
@@ -885,6 +936,23 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .activity-section {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .activity {
