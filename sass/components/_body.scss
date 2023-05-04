@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+  // outline: 2px solid red;
   @media screen and (max-width: 768px) {
     max-width: 480px;
     padding: 0 15px;
@@ -60,6 +61,11 @@ a {
   position: relative;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (min-width:480px) and (max-width:1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;    
+  }
 }
 
 .section__title,
@@ -68,11 +74,15 @@ a {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .section--inverse {
   @extend .section;
+  width: 100%;
   background-color: $secondary-bgc;
   background-position: center;
 }
