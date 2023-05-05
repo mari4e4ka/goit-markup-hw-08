@@ -1,5 +1,8 @@
 .header {
-  @include flex;
+  @media screen and (min-width: 768px) {
+    @include flex;
+    justify-content: space-between;
+  }
 }
 
 .header {
@@ -9,7 +12,11 @@
     width: 100%;
     height: 0;
     left: 0px;
-    top: 80px;
+    top: 60px;
+
+    @media screen and (min-width: 768px) {
+      top: 80px;
+    }
 
     border: 1px solid #ececec;
   }
@@ -21,11 +28,21 @@
 
 .header__logo {
   @extend %logo;
-  padding: 24px 93px 25px 0;
+  padding: 16px 0 16px 15px;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0 26px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 26px 93px 26px 0;
+  }
 }
 
 .navigation {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -68,17 +85,32 @@
 }
 
 .contact {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact__item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &:nth-child(1) {
+    margin-bottom: 10px;
+  }
 
-.contact__item:not(:last-child) {
-  margin-right: 40px;
+  &:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
 }
 
 .contact__link {

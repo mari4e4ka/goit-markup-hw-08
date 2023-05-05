@@ -14,23 +14,21 @@
   margin-bottom: 50px;
 
   @media screen and (max-width: 768px) {
-  justify-content: start;
+    justify-content: start;
   }
 }
 
 .portfolio-nav__item {
   margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
-
-.portfolio-nav__item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-nav__item:nth-child(3) {
-  margin-right: 0;
-}
-
-
 
 .exemples__list {
   @media screen and (max-width: 1170px) {

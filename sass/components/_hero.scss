@@ -5,13 +5,17 @@
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  @media screen and (min-width: 1200px) {
+  font-size: 44px;    
+  }
+
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0px auto 30px;
 
-  width: 700px;
+  // width: 700px;
   color: $primary-bgc;
 }
 

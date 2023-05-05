@@ -1,6 +1,9 @@
 .footer {
   max-width: 1600px;
-  height: 251px;
+  height: 603px;
+  @media screen and (min-width: 1200px) {
+  height: 251px;    
+  }
   margin: 0 auto;
   background-image: url(../images/bgfooter.svg);
   background-position: center;
@@ -8,22 +11,47 @@
 
 .footer__container {
   @extend .container;
-  display: flex;
+  @media screen and (min-width: 1200px) {
+  display: flex;    
+  }
+}
+
+.tablet-container {
+  @media screen and (min-width:768px) {
+  display: flex;    
+  }
+
 }
 
 .footer-info {
+  width: 232px;
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 231px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align-last: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer-info__address {
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
   color: $primary-bgc;
 }
 
 .footer-info__contact {
-  margin-top: 12px;
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+  margin-top: 12px;    
+  }
 }
 
 .footer-info__link {
@@ -38,7 +66,8 @@
 
 .footer__logo {
   @extend %logo;
-  margin-bottom: 28px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .footer-text-color {
@@ -46,7 +75,21 @@
 }
 
 .join {
-  margin: 72px 0 0 70px;
+  width: 206px;
+  text-align: center;
+
+  margin: 0 auto 60px;
+@media screen and (min-width:768px) and (max-width: 1199px) {
+  margin-top: 65px;
+  margin-right: 89px;
+
+}
+
+  @media screen and (min-width: 1200px) {
+  margin: 72px 0 0 70px;   
+  text-align-last: left; 
+  }
+
 }
 
 .join__title {
@@ -83,29 +126,37 @@
 }
 
 .subscribe {
-  display: flex;
-  width: 570px;
-  height: 86px;
+  width: 450px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+   display: flex;
   margin-top: 72px;
-  margin-left: 93px;
+  margin-left: 93px;   
+  text-align-last: left;
+  }
+
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   color: $primary-bgc;
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   margin-top: 20px;
-  margin-right: 12px;
-
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+  margin-right: 12px;    
+  }
   color: $primary-bgc;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -119,8 +170,9 @@
   width: 200px;
   height: 50px;
   padding: 10px 28px;
-  margin-top: 36px;
-
+  @media screen and (min-width: 1200px) {
+  margin-top: 36px;    
+  }
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
