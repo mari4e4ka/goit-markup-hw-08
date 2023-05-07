@@ -1,9 +1,10 @@
 .header {
-  @media screen and (min-width: 768px) {
-    @include flex;
-    justify-content: space-between;
-  }
+  position: relative;
+  // @media screen and (min-width: 768px) {
+  @include flex;
+  justify-content: space-between;
 }
+// }
 
 .header {
   &:after {
@@ -35,6 +36,114 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 26px 93px 26px 0;
+  }
+}
+
+.mobile-menu {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $primary-bgc;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu .icon-menu-close {
+  display: none;
+}
+
+.mobile-menu.is-open .icon-menu-close {
+  display: block;
+}
+
+.mobile-menu.is-open .icon-menu {
+  display: none;
+}
+
+.mobile-menu__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu-container {
+  width: 100%;
+  height: 100%;
+  min-height: 796px;
+  padding: 48px 40px;
+  position: absolute;
+  top: 60px;
+  left: 100%;
+  background-color: $primary-bgc;
+  display: none;
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
+}
+
+
+.mobile-menu.is-open+.mobile-menu-container {
+  display: block;
+  left: 0;
+  }
+
+.mobile-menu-container__title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 1.175;
+  color: $title-text-color;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-menu-container__tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 1.16;
+  margin-top: 306px;
+  margin-bottom: 32px;
+
+    color: $accent-color;
+}
+
+.mobile-menu-container__mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1.16;
+  margin-bottom: 64px;
+
+  color: $main-text-color;
+}
+
+.mobile-menu-container__list {
+  display: flex;
+}
+
+.mobile-menu-container__link {
+  padding:0 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  color: $accent-color;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
   }
 }
 

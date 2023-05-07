@@ -129,13 +129,6 @@
   width: 450px;
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
-   display: flex;
-  margin-top: 72px;
-  margin-left: 93px;   
-  text-align-last: left;
-  }
-
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -144,6 +137,13 @@
   text-align: center;
 
   color: $primary-bgc;
+
+  @media screen and (min-width: 1200px) {
+   display: flex;
+  margin-top: 72px;
+  margin-left: 93px;   
+  text-align: left;
+  }
 }
 
 .subscribe__input {

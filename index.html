@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="header container">
           <a href="./index.html" class="header__logo"
             ><span class="logo__accent ">Web</span>Studio</a
@@ -45,11 +45,38 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="mobile-menu" data-menu-open aria-expanded="false" aria-controls="mobile-menu-container">
+          <svg class="mobile-menu__icon" aria-level="Меню">
+            <use href="./images/sprite.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/sprite.svg#icon-menu-close" class="icon-menu-close"></use>          
+          </svg>
+        </button>
+        <div class="mobile-menu-container">
+          <a href="./index.html" class="mobile-menu-container__title">Студія</a>
+          <a href="./portfolio.html" class="mobile-menu-container__title">Портфоліо</p>
+          <a href="./contacts.html" class="mobile-menu-container__title">Контакти</a>
+              <a href="mailto:info@devstudio.com" class="mobile-menu-container__tel">
+                info@devstudio.com</a
+              >
+              <a href="tel:+380961111111" class="mobile-menu-container__mail">
+                +38 096 111 11 11
+              </a>
+          <ul class="mobile-menu-container__list">
+            <li class="mobile-menu-container__link">
+              <a href="https://www.instagram.com/">Instagram </a></li>
+            <li class="mobile-menu-container__link">
+              <a href="https://twitter.com/">Twitter</a></li>
+            <li class="mobile-menu-container__link"> 
+              <a href="https://www.facebook.com/">Facebook</a></li>
+            <li class="mobile-menu-container__link">
+              <a href="https://www.linkedin.com/">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero -->
-      <!-- <div class="overlay">
+      <div class="overlay">
         <section class="hero">
           <div class="container">
             <h1 class="hero__title"> Ефективні рішення для<br>вашого бізнесу</h1>
@@ -93,8 +120,7 @@
                   <label class="agreement">
                     <input type="checkbox" name="agreement" class="agreement__input">
                     <img src="./images/Vector.svg"  class="agreement__icon">
-                    </img>
-                    Погоджуюся з розсилкою та приймаю <a href="" class="agreement__link">Умови договору</span></a>
+                    </img>Погоджуюся з розсилкою та приймаю <a href="" class="agreement__link">Умови договору</span></a>
                   </label>
 
                  <button type="submit" class="main-form__button">Відправити</button>
@@ -107,9 +133,9 @@
             </button>
           </div>
         </section>
-      </div> -->
-      <!--Whay we-->
-      <!-- <section class="preference">
+      </div>
+      <!--Whay we -->
+      <section class="preference">
         <div class="container">
           <ul class="preference-list">
             <li class="preference-list__item">
@@ -153,9 +179,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- What we do -->
-      <!-- <section class="activity-section">
+      <section class="activity-section">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <div class="activity">
@@ -188,9 +214,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Our team -->
-      <!-- <section class="section--inverse">
+      <section class="section--inverse">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
@@ -360,9 +386,9 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
       <!-- Clients -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -398,7 +424,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -483,5 +509,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
