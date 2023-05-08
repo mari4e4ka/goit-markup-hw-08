@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  // outline: 2px solid red;
+  outline: 2px solid red;
   @media screen and (max-width: 767px) {
     max-width: 480px;
     padding: 0 15px;
@@ -68,6 +68,12 @@ a {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section__title,
 .contact-header {
   font-weight: 700;
@@ -85,4 +91,8 @@ a {
   width: 100%;
   background-color: $secondary-bgc;
   background-position: center;
+}
+
+body.modal-open {
+  overflow: hidden;
 }

@@ -6,5 +6,10 @@
     menuBtnRef.classList.toggle("is-open");
 });
 
+function toggleModal() {
+    document.body.classList.toggle("modal-open");
+    // refs.modal.classList.toggle("is-hidden");
+  }
+
 })();
   
