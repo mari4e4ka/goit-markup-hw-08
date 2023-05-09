@@ -7,8 +7,9 @@
 
 .team-member {
   display: inline-block;
-  max-width: 450px;
+  // max-width: 450px;
   margin: 15px;
+
   @media screen and (min-width:768px) {
     width: 354px;
   }
@@ -27,11 +28,11 @@
 
   @media screen and (min-width:768px) {
     width: 354px;
-    height: 374px;
+    // height: 374px;
   }
   @media screen and (min-width:1200px) {
     width: 270px;
-    height: 260px;
+    // height: 260px;
   }
 }
 
@@ -58,7 +59,7 @@
 
 .social-media {
   display: flex;
-  justify-content: center;
+  justify-content: center;    
   margin: 0 32px 30px 32px;
   padding: 0;
 }

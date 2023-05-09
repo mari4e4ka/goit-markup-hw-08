@@ -1,6 +1,7 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: -15px;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .clients-list__item {
-    margin: 15px;
+  margin: 15px;
 }
 
 .clients-list__link {
@@ -49,7 +50,7 @@
   width: 106px;
   height: 60px;
   margin: 16px 52px;
-  
+
   @media screen and (min-width: 768px) {
     margin: 16px 60px;
   }

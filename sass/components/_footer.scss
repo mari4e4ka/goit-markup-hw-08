@@ -2,7 +2,7 @@
   max-width: 1600px;
   height: 603px;
   @media screen and (min-width: 1200px) {
-  height: 251px;    
+    height: 251px;
   }
   margin: 0 auto;
   background-image: url(../images/bgfooter.svg);
@@ -12,15 +12,14 @@
 .footer__container {
   @extend .container;
   @media screen and (min-width: 1200px) {
-  display: flex;    
+    display: flex;
   }
 }
 
 .tablet-container {
-  @media screen and (min-width:768px) {
-  display: flex;    
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
-
 }
 
 .footer-info {
@@ -50,7 +49,7 @@
 .footer-info__contact {
   margin-top: 8px;
   @media screen and (min-width: 1200px) {
-  margin-top: 12px;    
+    margin-top: 12px;
   }
 }
 
@@ -79,17 +78,15 @@
   text-align: center;
 
   margin: 0 auto 60px;
-@media screen and (min-width:768px) and (max-width: 1199px) {
-  margin-top: 65px;
-  margin-right: 89px;
-
-}
-
-  @media screen and (min-width: 1200px) {
-  margin: 72px 0 0 70px;   
-  text-align-last: left; 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 65px;
+    margin-right: 89px;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin: 72px 0 0 70px;
+    text-align-last: left;
+  }
 }
 
 .join__title {
@@ -139,16 +136,16 @@
   color: $primary-bgc;
 
   @media screen and (min-width: 1200px) {
-   display: flex;
-  margin-top: 72px;
-  margin-left: 93px;   
-  text-align: left;
+    display: flex;
+    margin-top: 72px;
+    margin-left: 93px;
+    text-align: left;
   }
 }
 
 .subscribe__input {
   display: block;
-  max-width: 450px;
+  width: 100%;
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -163,9 +160,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 0;
-  
+
   @media screen and (min-width: 1200px) {
-  margin-right: 12px;    
+    margin-right: 12px;
   }
   color: $primary-bgc;
   background-color: #2f303a;
@@ -181,7 +178,7 @@
   height: 50px;
   padding: 10px 28px;
   @media screen and (min-width: 1200px) {
-  margin-top: 36px;    
+    margin-top: 36px;
   }
   font-weight: 700;
   font-size: 16px;
