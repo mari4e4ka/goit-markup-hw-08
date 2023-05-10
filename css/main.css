@@ -441,9 +441,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.container, .contact-container, .footer__container {
-  outline: 2px solid red;
-}
 @media screen and (max-width: 767px) {
   .container, .contact-container, .footer__container {
     max-width: 480px;
@@ -1186,26 +1183,35 @@ body.modal-open {
 }
 
 .team {
-  margin: -15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .team-member {
   display: inline-block;
-  margin: 15px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767px) {
+  .team-member {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .team-member {
     width: 354px;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1255,7 +1261,7 @@ body.modal-open {
 .social-media {
   display: flex;
   justify-content: center;
-  margin: 0 32px 30px 32px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
@@ -1368,6 +1374,11 @@ body.modal-open {
   margin: 0 auto;
   background-image: url(../images/bgfooter.svg);
   background-position: center;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 463px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer {

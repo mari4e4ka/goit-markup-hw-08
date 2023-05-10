@@ -1,17 +1,21 @@
 .team {
-  margin: -15px;
+  @include flex();
+  justify-content: center;
   @media screen and (min-width:768px) {
       @include flex();
+      margin: -15px;
   }
 }
 
 .team-member {
   display: inline-block;
   // max-width: 450px;
-  margin: 15px;
+  @media screen and (max-width:767px) {
+  margin-bottom: 30px;}
 
   @media screen and (min-width:768px) {
     width: 354px;
+    margin: 15px;
   }
   @media screen and (min-width:1200px) {
     width: 270px;
@@ -60,7 +64,7 @@
 .social-media {
   display: flex;
   justify-content: center;    
-  margin: 0 32px 30px 32px;
+  margin-bottom: 24px;
   padding: 0;
 }
 

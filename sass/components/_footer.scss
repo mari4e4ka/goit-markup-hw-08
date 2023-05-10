@@ -1,6 +1,10 @@
 .footer {
   max-width: 1600px;
   height: 603px;
+
+  @media screen and (min-width: 768px) {
+    height: 463px;
+  }
   @media screen and (min-width: 1200px) {
     height: 251px;
   }
