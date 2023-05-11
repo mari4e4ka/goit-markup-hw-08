@@ -773,7 +773,14 @@ body.modal-open {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -792,13 +799,40 @@ body.modal-open {
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 768px;
+  height: auto;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg), url(../images/Bg.svg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/mobile-header.jpg), url(../images/Bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/mobile-header@2x.jpg) url(../images/Bg.svg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 1200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/tablet-header.jpg), url(../images/Bg.svg);
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/tablet-header@2x.jpg) url(../images/Bg.svg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/desktop-header.jpg), url(../images/Bg.svg);
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header/desktop-header@2x.jpg) url(../images/Bg.svg);
+  }
 }
 
 .button, .subscribe__button, .main-form__button {
