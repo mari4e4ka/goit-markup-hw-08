@@ -157,7 +157,7 @@
   background: $primary-bgc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-image: url(/images/close.svg);
+  background-image: url(../images/close.svg);
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -167,7 +167,7 @@
   &:hover,
   &:focus {
     cursor: pointer;
-    background-image: url(/images/close-hover.svg);
+    background-image: url(../images/close-hover.svg);
   }
 }
 

@@ -56,11 +56,11 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/header/tablet-header@2x.jpg) url(../images/Bg.svg);
+        url(../images/header/tablet-header@2x.jpg) url(../images/Bg.svg);
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
