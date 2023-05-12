@@ -26,21 +26,21 @@
   max-width: 768px;
   height: auto;
   // height: 600px;
-  margin: 0 auto;
+  margin: 2px auto;
 
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/header/mobile-header.jpg), url(../images/Bg.svg);
+    url(../images/header/mobile-header.jpg), url(../images/Bg.svg);
 
   @media screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/header/mobile-header@2x.jpg) url(../images/Bg.svg);
+      url(../images/header/mobile-header@2x.jpg) url(../images/Bg.svg);
   }
 
   @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/header/tablet-header.jpg), url(../images/Bg.svg);
+      url(../images/header/tablet-header.jpg), url(../images/Bg.svg);
 
     @media screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
